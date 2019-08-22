@@ -48,6 +48,9 @@ h4 {
 img {
    max-width: 100%;
 }
+.d-block {
+   display: block !important;
+}
 .boton {
    color: white;
    font-weight: 700;
@@ -57,7 +60,6 @@ img {
    display: inline-block;
    margin-top: 3rem;
    text-align: center;
-
 }
 .boton-amarillo {
    background: #E08709;
@@ -151,4 +153,8 @@ img {
 }
 .contenido-anuncio {
    padding: 2rem;
+}
+.ver-todas {
+   display: flex;
+   justify-content: end;
 }
