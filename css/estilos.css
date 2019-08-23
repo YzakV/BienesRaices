@@ -194,3 +194,54 @@ img {
 .contenido-contacto p {
    font-size: 1.8rem;
 }
+
+/* Blog y Testimoniales */
+
+.seccion-inferior {
+   display: flex;
+   justify-content: space-between;
+}
+
+.blog {
+   flex-basis: 60%;
+}
+.entrada-blog {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type {
+   margin-bottom: 0;
+}
+.imagen-blog {
+   flex-basis: 40%;
+}
+.texto-blog {
+   flex-basis: calc(60% - 3rem);
+}
+.texto-blog a {
+   text-decoration: none;
+   color: #000;
+}
+.texto-blog h4 {
+   margin: 0;
+   line-height: 1.4rem;
+}
+.texto-blog span {
+   font-style: italic;
+   color: #E08709;
+}
+
+.testimoniales {
+   flex-basis: calc(40% - 2rem);
+}
+
+
+.texto-blog h4::after {
+   content: "";
+   display: block;
+   width: 15rem;
+   height: .5rem;
+   background-color: #71B100;
+   margin-top: 1rem;
+}
