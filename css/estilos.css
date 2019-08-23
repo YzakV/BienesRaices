@@ -154,6 +154,21 @@ img {
 .contenido-anuncio {
    padding: 2rem;
 }
+
+.iconos-caracteristicas {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: space-evenly;
+}
+.iconos-caracteristicas li {
+   /* flex: 1; */
+   display: flex;
+}
+.iconos-caracteristicas li img {
+   margin-right: 2rem;
+}
+
 .ver-todas {
    display: flex;
    justify-content: end;
@@ -173,4 +188,8 @@ img {
 }
 .contenido-contacto {
    flex: 1;
+   color: #fff;
+}
+.contenido-contacto p {
+   font-size: 1.8rem;
 }
