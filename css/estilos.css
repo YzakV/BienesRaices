@@ -159,7 +159,7 @@ img {
    list-style: none;
    padding: 0;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-evenly; /* space-evenly crea espacios a la izquierda y derecha de cada item, dejando mas pequeños los espacios del centro a diferencia de space-around que de igual forma deja espacios a la izquierda y derecha de cada item pero este aplica a los espacios del centro una mayor anchura*/
 }
 .iconos-caracteristicas li {
    /* flex: 1; */
@@ -184,6 +184,7 @@ img {
    height: 40rem;
    display: flex;
    align-items: center;
+   margin-top: 3rem;
 
 }
 .contenido-contacto {
