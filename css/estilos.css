@@ -68,6 +68,10 @@ img {
    background: #71B100;
 }
 /* HEADER */
+.site-header {
+   background-color: #333333;
+   padding: 1rem 0 3rem 0;
+}
 .site-header.home {
    background-image: url(../img/header.jpg);
    background-position: center center;
@@ -236,7 +240,6 @@ img {
    flex-basis: calc(40% - 2rem);
 }
 
-
 .texto-blog h4::after {
    content: "";
    display: block;
@@ -244,4 +247,60 @@ img {
    height: .5rem;
    background-color: #71B100;
    margin-top: 1rem;
+}
+
+.testimonial {
+   background-color: #71B100;
+   font-size: 2.4rem;
+   padding: 2rem;
+   color: #ffff;
+   border-radius: 2rem;
+}
+.testimonial p {
+   text-align: right;
+}
+.testimonial blockquote {
+   position: relative;
+   padding-left: 5rem;
+   font-weight: 300;
+}
+.testimonial blockquote::before {
+   content: "";
+   background-image: url(../img/comilla.svg);
+   width: 4rem;
+   height: 4rem;
+   margin-right: 2rem;
+   position: absolute;
+   left: -2rem;
+}
+
+/* Footer */
+
+.site-footer {
+   background-color: #333333;
+   margin-bottom: 0;
+}
+.contenedor-footer {
+   padding: 3rem 0;
+   display: flex;
+   justify-content: space-between;
+}
+.site-footer .contenedor-footer p {
+   margin: 0;
+   color: #ffff;
+}
+
+/* Internas */
+
+.contenido-nosotros {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   /* grid-template-columns determina el ancho de los items dentro del contenedor asignando ya sea porcentajes, px, o la medida fr(fraccion), repeat(no. de items, medidas para cada uno), se debe asignar una medida por cada item, como en el ejemplo anterior tenemos 2 items colocamos 2 medidas  */
+   grid-column-gap: 2rem; /*Sirve para crear separaciones entre las columnas creadas con grid-template-columns*/
+}
+.texto-nosotros blockquote {
+   font-weight: 900;
+   font-size: 2rem;
+   margin: 0;
+   padding: 0 0 3rem;
 }
