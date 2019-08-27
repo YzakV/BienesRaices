@@ -142,18 +142,21 @@ img {
 .contenedor-anuncios {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 .contenido-anuncio h3 {
    margin: 0;
 }
-.contenido-anuncio .precio {
+.precio {
    color: green;
    font-weight: 700;
 }
 .anuncio {
-   flex-basis: calc(33.33% - 1rem);
+   /*flex-grow flex-shrink flex-basis *SHORTHAND**/
+   flex: 0 0 calc(33.33% - 1rem);
    border: .5px solid #B5B5B5;
    background: #f5f5f5;
+   margin-bottom: 2rem;
 }
 .contenido-anuncio {
    padding: 2rem;
@@ -164,6 +167,8 @@ img {
    padding: 0;
    display: flex;
    justify-content: space-evenly; /* space-evenly crea espacios a la izquierda y derecha de cada item, dejando mas pequeños los espacios del centro a diferencia de space-around que de igual forma deja espacios a la izquierda y derecha de cada item pero este aplica a los espacios del centro una mayor anchura*/
+   max-width: 500px;
+   flex: 1;
 }
 .iconos-caracteristicas li {
    /* flex: 1; */
@@ -185,6 +190,7 @@ img {
    background-image: url(../img/encuentra.jpg);
    background-position: center center;
    background-size: cover;
+   background-attachment: fixed;
    height: 40rem;
    display: flex;
    align-items: center;
@@ -291,7 +297,7 @@ img {
 }
 
 /* Internas */
-
+/* NOSOTROS */
 .contenido-nosotros {
    display: grid;
    grid-template-columns: 50% 50%;
@@ -303,4 +309,14 @@ img {
    font-size: 2rem;
    margin: 0;
    padding: 0 0 3rem;
+}
+
+/* ANUNCIO */
+.resumen-propiedad {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contenido-centrado {
+   max-width: 800px;
 }
