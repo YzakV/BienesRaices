@@ -229,6 +229,9 @@ img {
 .texto-blog {
    flex-basis: calc(60% - 3rem);
 }
+.texto-blog p {
+   text-align: justify;
+}
 .texto-blog a {
    text-decoration: none;
    color: #000;
@@ -319,4 +322,7 @@ img {
 }
 .contenido-centrado {
    max-width: 800px;
+}
+.resumen-propiedad ~ p {
+   text-align: justify;
 }
