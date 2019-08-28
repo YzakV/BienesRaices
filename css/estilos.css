@@ -329,7 +329,44 @@ img {
 
 
 /* Contacto */
+form p {
+   font-size: 1.5rem;
+   color: #4f4f4f;
+}
+
+legend {
+   font-size: 2.4rem;
+   padding: 0 .5rem;
+   color: #333333;
+}
 
 label {
    display: block;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+input:not([type="submit"]), textarea, select{ /*not excluye al alemento pasado como parametro, ya sea por tipo, clase, o cualquier atributo que contenga cualquier valor*/
+   padding: 1rem;
+   display: block;
+   width: 100%;
+   background-color: #E1E1E1;
+   border: none;
+   margin-bottom: 2rem;
+}
+input[type="radio"] {
+   width: auto;
+   margin: 0;
+}
+select {
+   -webkit-appearance: none;
+   appearance: none;
+}
+textarea {
+   height: 20rem;
+}
+.forma-contacto {
+   max-width: 30rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
 }
