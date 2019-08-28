@@ -326,3 +326,10 @@ img {
 .resumen-propiedad ~ p {
    text-align: justify;
 }
+
+
+/* Contacto */
+
+label {
+   display: block;
+}
